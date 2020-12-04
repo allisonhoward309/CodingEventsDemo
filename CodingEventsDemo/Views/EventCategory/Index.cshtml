@@ -1,0 +1,37 @@
+﻿@model List<CodingEventsDemo.Models.EventCategory>
+
+<h1>Coding Events Category</h1>
+
+@if (Model.Count == 0)
+{
+    <p>No events yet!</p>
+}
+else
+{
+    <table class="table">
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Contact Email
+            </th>
+            <th>
+                Event Type
+            </th>
+        </tr>
+        @foreach (var evt in Model)
+        {
+            <tr>
+                <td>@evt.ID</td>
+                <td>@evt.Name</td>
+            </tr>
+        }
+    </table>
+}
