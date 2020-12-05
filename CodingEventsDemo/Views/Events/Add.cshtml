@@ -18,5 +18,20 @@
         <input asp-for="ContactEmail" />
         <span asp-validation-for="ContactEmail"></span>
     </div>
+    <div class="form-group">
+        <label asp-for="Location"></label>
+        <input asp-for="Location" />
+        <span asp-validation-for="Location"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NumberAttendees">Numer of Atendees</label>
+        <input asp-for="NumberAttendees" />
+        <span asp-validation-for="NumberAttendees"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="RegistrationRequired">Registration is required?</label>
+        <input type="checkbox" asp-for="RegistrationRequired" />
+        <span asp-validation-for="RegistrationRequired"></span>
+    </div>
     <input type="submit" value="Add Event" />
 </form>
