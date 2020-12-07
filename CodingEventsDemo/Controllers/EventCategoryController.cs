@@ -10,15 +10,15 @@ namespace CodingEventsDemo.Controllers
 {
     public class EventCategoryController : Controller
     {
-        private EventCategoryDbContext context;
-        public EventCategoryController (EventCategoryDbContext dbContext)
+        private EventDbContext context;
+        public EventCategoryController (EventDbContext dbContext)
         {
             context = dbContext;
         }
         public IActionResult Index()
         {
-            List<EventCategory> events = context.EventCategory.ToList();
-            return View(events);
+            List<EventCategory> eventCategory = context.EventCategory.ToList();
+            return View(eventCategory);
         }
     }
 }
