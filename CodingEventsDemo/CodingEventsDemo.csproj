@@ -4,12 +4,16 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="Views\EventCategory\Index1.cshtml" />
+    <Content Remove="Views\EventCategory\ProcessCreateEvent.cshtml" />
+  </ItemGroup>
+
 
 
   <ItemGroup>
     <Folder Include="Migrations\" />
     <Folder Include="Views\Events\" />
-    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.2.4" />
